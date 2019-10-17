@@ -36,12 +36,15 @@ class PigLatinizer
     const_string = word.slice(0, pig_latinized_const_count(word))
     pig_latin_word = ""
 
-    if vowel?(word[0])
-      pig_latin_word = word + "way"
-    else
-      pig_latin_word = sliced_string + const_string + "ay"
+      if vowel?(word[0])
+        pig_latin_word = word + "way"
+      else
+        pig_latin_word = sliced_string + const_string + "ay"
+      end
+      pig_latin_word
     end
-    pig_latin_word
+    
   end
+  
 
 end
