@@ -43,8 +43,8 @@ class PigLatinizer
       end
       pig_latin_word
     end
-    
+
   end
-  
+
 
 end
